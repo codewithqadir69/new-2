@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+</head>
+<body>
+    <div class="container">
+        <form onsubmit="return false">
+            <label for="cityName">City Name :</label>
+            <input type="text" id="cityName">
+            <button onclick="cityFound()">Enter</button>
+        </form>
+        <br>
+        <form onsubmit="return false">
+            <label>Enter you Gender :</label>
+            <input type="text" id="genderName">
+        <button onclick="genderFound()">Enter</button>
+    </form>
+    <br>
+    <form onsubmit="return false">
+        <label>Traffic Signal :</label>
+        <input type="text" id="signals">
+        <button onclick="signalFound()">Enter</button>
+    </form>
+    
+    <br>
+    <form onsubmit="return false">
+        <label>Enter your Remaining Fuel :</label>
+        <input type="number" id="yourfuel">
+        <button onclick="feulFound()">Enter</button>
+    </form>
+<br>
+<form onsubmit="return false">
+    <label> :</label>
+    <input type="text" id="envirntemp">
+    <button onclick="temperatureFound()">Enter</button>
+</form>
+    <br>
+    <form onsubmit="return false">
+        <label>Check your Number is Even or Odd :</label>
+        <input type="text" id="even or odd">
+        <button onclick="evenorodddFound()">Enter</button>
+    </form>
+</div>
+
+
+
+    <script>
+        function cityFound(){
+
+            let  cityFixed = document.querySelector("#cityName").value;
+
+            if  (cityFixed == "Karachi" || cityFixed == "karachi" ){
+                alert ("Welcome to the City Of Lights")
+            }
+
+            if  (cityFixed == "Islamabad" || cityFixed == "islamabad" ){
+                alert ("Capital of Pakistan")
+            }
+
+            if  (cityFixed == "Peshawar" || cityFixed == "peshawar" ){
+                alert ("Welcome to The City of Flowers")
+            }
+
+            if  (cityFixed == "Tokyo" || cityFixed == "tokyo" ){
+                alert ("Welcome to The City of JDM")
+            }
+            
+        }
+
+        function genderFound(){
+
+            let maleFixed = document.querySelector("#genderName").value;
+            let femaleFixed = document.querySelector("#genderName").vale;
+
+            if (maleFixed == "Male" || maleFixed == "male" ){
+                alert ("Good Morning Sir")
+            }
+
+            else if (maleFixed == "Female" || maleFixed == "female"){
+                alert ("Good Morning Mam")
+            }
+
+        }
+
+        function signalFound(){
+            let fixedSignals = document.querySelector("#signals").value;
+
+                if (fixedSignals == "red" || fixedSignals == "Red"){
+                    alert("stop")      
+                }
+                else if (fixedSignals == "yellow" || fixedSignals == "Yellow"){
+                    alert("Ready to go")
+                }
+                else if (fixedSignals == "Green" || fixedSignals == "green"){
+                    alert("moved")
+                }
+
+    }
+        
+
+    </script>
+</body>
+</html>
